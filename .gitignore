@@ -1,0 +1,13 @@
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+.env
+.env.*
+*.local
+dist/
+build/
+.cache/
+.tmp/
+.netlify/
+.vercel/
