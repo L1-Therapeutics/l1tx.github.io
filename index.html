@@ -11,12 +11,12 @@
 
   <style>
     :root {
-      /* Placeholder colors — adjust to your actual scheme */
-      --primary: #feb24c;
-      --secondary: #fc4e2a;
+      --primary: #feb24c;   /* headers */
+      --link: #2c5aa0;      /* neutral, professional link color */
       --text: #1a1a1a;
       --muted: #666;
-      --bg: #ffffcc;
+      --bg: #ffffff;
+      --border: #e5e5e5;
     }
 
     body {
@@ -66,8 +66,21 @@
       color: var(--muted);
     }
 
+    /* Section dividers */
+    section {
+      border-top: 1px solid var(--border);
+      padding-top: 2rem;
+      margin-top: 2.5rem;
+    }
+
+    section:first-of-type {
+      border-top: none;
+      padding-top: 0;
+      margin-top: 0;
+    }
+
     footer {
-      border-top: 1px solid #e5e5e5;
+      border-top: 1px solid var(--border);
       margin-top: 3rem;
       padding-top: 1rem;
       font-size: 0.85rem;
@@ -75,7 +88,7 @@
     }
 
     a {
-      color: var(--secondary);
+      color: var(--link);
       text-decoration: none;
     }
 
@@ -101,6 +114,7 @@
       <p class="status">Company in formation</p>
     </header>
 
+    <!-- Mission -->
     <section id="mission">
       <p>
         L1 Therapeutics is focused on developing new therapeutic approaches for diseases driven by genomic instability and uncontrolled cellular evolution. We aim to advance treatments that slow disease progression and improve long‑term outcomes for patients with serious, underserved conditions, beginning in oncology. By applying modern biological insights and technologies to existing therapeutic modalities, we seek to responsibly accelerate meaningful benefit to patients most likely to need it.
@@ -117,6 +131,10 @@
 
       <p>
         L1 Therapeutics was founded by William Brandler, who trained in Natural Sciences at the University of Cambridge and earned a PhD in Human Genomics from the University of Oxford. His background spans cancer genomics and computational biology, with research and industry experience applying large‑scale genomic data to understand disease biology.
+      </p>
+
+      <p>
+        The company is advised by RORR Consulting, led by Richard Ogden, who has extensive experience supporting therapeutic development programs across infectious disease and oncology.
       </p>
 
       <p><em>
