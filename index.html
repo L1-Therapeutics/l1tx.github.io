@@ -145,9 +145,16 @@
 
     <!-- Contact (no header) -->
     <section id="contact">
-      <p>
-        <a href="mailto:contact@l1tx.com">contact@l1tx.com</a>
-      </p>
+      <p id="email">Loading contact…</p>
+    
+      <script>
+        setTimeout(() => {
+          const u = "info";
+          const d = "l1tx.com";
+          document.getElementById("email").innerHTML =
+            `<a href="mailto:${u}@${d}">${u}@${d}</a>`;
+        }, 500);
+      </script>
     </section>
 
     <!-- Footer -->
